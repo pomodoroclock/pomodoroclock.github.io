@@ -1,0 +1,21 @@
+{
+  "name": "pomodoroclock.github.io",
+  "version": "1.0.0",
+  "description": "a simple pomodoro clock built with react",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pomodoroclock/pomodoroclock.github.io.git"
+  },
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-scripts": "1.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
