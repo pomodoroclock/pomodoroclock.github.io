@@ -1,21 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Clock from './Clock';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
   render() {
+    const timer = {
+      textAlign: 'center'
+    };
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="pure-g">
+        <div className="pure-u-1-1">
+          <Clock />
+        </div>
+        <div className="pure-u-1-3">
+          <div className="btn l-box">
+            <h3>Countup Timer</h3>
+          </div>
+        </div>
+        <div className="pure-u-1-3">
+          <div className="btn l-box">
+            <h3>Countdown Timer</h3>
+          </div>
+        </div>
+        <div className="pure-u-1-3">
+          <div className="btn l-box">
+            <h3>Pomodoro Clock</h3>
+          </div>
+        </div>
       </div>
     );
   }
 }
-
-export default App;
