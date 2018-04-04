@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 
-export default class Class extends Component {
+export default class DigitalClock extends Component {
 	state = {
     time: "00:00:00",
     amPm: "am"

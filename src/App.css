@@ -3,14 +3,25 @@ body {
   background: #ecf0f1;
   color: #95a5a6;
 }
-h1, h3 {
+h1 {
   font-family: 'Open Sans', serif;
   font-size: 2em;
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+h3 {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
 .btn {
   padding: 0.5em;
+  text-decoration: none;
   margin: 0.5em;
   border-radius: 5px;
   background: #95a5a6;
