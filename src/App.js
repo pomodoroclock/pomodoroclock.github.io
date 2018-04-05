@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+import { HashRouter, Route, Link, Switch } from 'react-router-dom';
 import DigitalClock from './DigitalClock';
 import { Countdown, Countup, Pomodoro } from './Clocks';
 import './App.css';
@@ -41,14 +41,14 @@ export default class App extends Component {
             <DigitalClock />
           </div>
         </div>
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={main} />
             <Route path="/countdown" component={Countdown} />
             <Route path="/countup" component={Countup} />
             <Route path="/pomodoro" component={Pomodoro} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
