@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && mv build/index.html build/200.html && echo ticktock.surge.sh > build/CNAME",
+    "deploy": "npm run build && mv build/index.html build/200.html && echo https://ticktock.surge.sh > build/CNAME",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
