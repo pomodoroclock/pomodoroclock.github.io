@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import './styles/Clocks.css';
+import '../styles/Clocks.css';
 
 export class Countdown extends Component {
-  
   constructor(props) {
     super(props);
     this.minutes = React.createRef();

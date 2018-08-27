@@ -6,18 +6,18 @@ export default class DigitalClock extends Component {
     amPm: "am",
     showClock: false
   }
-	
+
 	componentDidMount () {
 		this.loadInterval = setInterval(this.getTime, 900);
 	}
-	
+
 	getTime = () => {
-    const takeTwelve = n => n > 12 ?  n  - 12 : n,
-      addZero = n => n < 10 ? "0" +  n : n;
+    let takeTwelve = n => (n > 12) ? n - 12 : n;
+    let addZero = n => (n < 10) ? "0" + n : n;
 		 
     let d, h, m, s, t, amPm;
     d = new Date();
-    h = addZero(takeTwelve(d.getHours())); 
+    h = addZero(takeTwelve(d.getHours()));
     m = addZero(d.getMinutes());
     s = addZero(d.getSeconds());
     t = `${h}:${m}:${s}`;
@@ -28,9 +28,9 @@ export default class DigitalClock extends Component {
       time: t,
       amPm: amPm
     });
-      
+
 	}
-	
+
   render = () => {
     return (
       <div id="central-clock">
